@@ -1,0 +1,59 @@
+{
+  "name": "@xpamamadeus/zustand",
+  "version": "1.0.0",
+  "description": "zustand",
+  "keywords": [
+    "zustand",
+    "react",
+    "typescript"
+  ],
+  "repository": "XpamAmAdEuS/zustand",
+  "homepage": "https://github.com/XpamAmAdEuS/zustand/",
+  "bugs": {
+    "url": "https://github.com/XpamAmAdEuS/zustand/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "MiljenkoHalapir",
+    "email": "miljenkohalapir@gmail.com",
+    "url": "https://github.com/XpamAmAdEuS"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node build.mjs && tsc --emitDeclarationOnly",
+    "lint": "eslint *.ts* && tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "esbuild": "^0.15.15",
+    "react": "^18.2.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "immer": "^9.0.16",
+    "fast-deep-equal": "^3.1.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "immer": "^9.0.16",
+    "fast-deep-equal": "^3.1.3"
+  },
+  "peerDependenciesMeta": {
+    "immer": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "fast-deep-equal": {
+      "optional": true
+    }
+  }
+}
